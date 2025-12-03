@@ -2012,7 +2012,7 @@ export default function BPMNPresentation() {
               </Badge>
 
               <div className="rounded-lg bg-slate-800/50 p-5 mb-4">
-                <p className="text-slate-300 mb-4">Tu trabajo NO es aprenderte los 91 robots. Tu trabajo es:</p>
+                <p className="text-slate-300 mb-4">El trabajo NO es aprender los robots de memoria. El trabajo es:</p>
                 <div className="grid md:grid-cols-2 gap-3">
                   {[
                     "Saber dónde buscar",
@@ -2102,7 +2102,7 @@ export default function BPMNPresentation() {
                     },
                     {
                       letter: "D",
-                      title: "Excel Maestro de Soporte",
+                      title: "Excel de Soporte",
                       items: [
                         "Qué hace el robot",
                         "Qué valida",
@@ -2199,10 +2199,10 @@ export default function BPMNPresentation() {
 
             <Card className="border-red-700/30 bg-gradient-to-br from-red-950/50 to-slate-900/80 p-6 backdrop-blur">
               <Badge className="mb-4 bg-red-600 hover:bg-red-700 text-white">
-                3️⃣ ANÁLISIS DE INCIDENTES (Diagnóstico profesional)
+                3️⃣ ANÁLISIS DE INCIDENTES (Diagnóstico)
               </Badge>
               <p className="text-slate-300 mb-4">
-                Este es el checklist oficial para investigar fallas en robots Servipag / Previred.
+                Este es el checklist para investigar fallas en robots Servipag / Previred.
               </p>
 
               <div className="space-y-4">
@@ -2301,10 +2301,10 @@ export default function BPMNPresentation() {
                 </div>
 
                 <div className="rounded-lg bg-yellow-900/20 border border-yellow-700/30 p-4">
-                  <h5 className="font-semibold text-yellow-300 mb-2">F. Fallas típicas de Servipag (muy realistas)</h5>
+                  <h5 className="font-semibold text-yellow-300 mb-2"> 4️⃣LOGS (fundamental en soporte)</h5>
                   <div className="grid md:grid-cols-2 gap-2">
                     {[
-                      "Banco Chile expira token",
+                      "expira token",
                       "Portal Empresas lento",
                       "SharePoint bloquea Excel",
                       "Outlook pide MFA",
@@ -2323,7 +2323,7 @@ export default function BPMNPresentation() {
 
             <Card className="border-green-700/30 bg-gradient-to-br from-green-950/50 to-slate-900/80 p-6 backdrop-blur">
               <Badge className="mb-4 bg-green-600 hover:bg-green-700 text-white">
-                PLANTILLA OFICIAL DE INCIDENTE RPA
+                PLANTILLA DE INCIDENTE RPA EJEMPLO REAL
               </Badge>
 
               <div className="space-y-3">
@@ -2335,23 +2335,22 @@ export default function BPMNPresentation() {
                       "Tipo: Activación de Nóminas",
                       "Fecha/Hora del incidente",
                       "Ejecución: 13:00 / 17:00",
-                      "VM: VM-RPA-XX",
                     ],
                   },
                   {
                     section: "2. ¿Qué estaba haciendo el robot?",
-                    fields: ["Ejemplo: Buscando la transferencia asociada a la nómina Provida 51010."],
+                    fields: ["Buscando la transferencia asociada a la nómina."],
                   },
                   {
                     section: "3. ¿Dónde falló?",
-                    fields: ["Ejemplo: En la validación del monto en el Banco de Chile."],
+                    fields: ["En la validación del monto en el Banco de Chile."],
                   },
                   { section: "4. Evidencia", fields: ["Screenshot", "Log", "Mensaje de error"] },
-                  { section: "5. Causa técnica", fields: ["Ejemplo: Timeout del Banco de Chile."] },
-                  { section: "6. Causa funcional", fields: ["Ejemplo: Monto no coincide con el declarado."] },
-                  { section: "7. Acción tomada", fields: ["Ejemplo: Reinicio del robot y reejecución del caso."] },
+                  { section: "5. Causa técnica", fields: ["Timeout del Banco de Chile."] },
+                  { section: "6. Causa funcional", fields: ["Monto no coincide con el declarado."] },
+                  { section: "7. Acción tomada", fields: ["Reinicio del robot y reejecución del caso."] },
                   {
-                    section: "8. Recomendación",
+                    section: "8. Recomendaciónes para evitar recurrencia",
                     fields: ["Validar credenciales", "Revisar plantillas", "Ajustar tiempo de espera"],
                   },
                   { section: "9. Severidad", fields: ["Alta / Media / Baja"] },
